@@ -1,0 +1,1405 @@
+@font-face {
+    font-family: Sans;
+    src: url(../Fonts/iransansdn.ttf);
+}
+
+* {
+    font-family: Sans;
+    direction: rtl;
+    background-color: #F1F1F1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: 800px;
+}
+
+.myNameHeader {
+    padding-top: 30px;
+    padding-right: 60px;
+    display: inline-block;
+    color: #555555;
+}
+
+.menuHeader {
+    z-index: 999;
+    width: 50px;
+    float: left;
+    padding: 12px;
+    /* background-color: white; */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    box-shadow: -8px -6px 15px 0 #fff, 6px 8px 15px rgb(0 0 0 / 15%);
+    border-color: hsla(0, 0%, 100%, 0);
+    margin: 27px;
+    display: block;
+}
+
+.header-image-shape-wrapper {
+    position: absolute;
+    left: 10%;
+    top: 32%;
+}
+
+.shape-image-header {
+    width: 21rem;
+    height: 28rem;
+    border-radius: 30rem;
+    background-color: #f1f1f1;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    transform: rotate(-25deg);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: solid 18px #F2F2F2;
+}
+
+.shape-image-header-2 {
+    position: absolute;
+    left: 0%;
+    top: -32%;
+    right: -24%;
+    bottom: 0%;
+    width: 192%;
+    height: 142%;
+    background-position: 80%;
+    background-size: cover;
+    overflow: hidden;
+    transform: rotate(25deg);
+}
+
+.right-div-header {
+    margin-right: 10%;
+}
+
+.text-header {
+    position: relative;
+    color: #555555;
+    float: right;
+    margin-top: 8%;
+    display: block;
+    font-size: 22px;
+}
+
+.button-header {
+    font-size: 18px;
+    margin-top: 50px;
+    /* margin: 20px; */
+    float: left;
+    padding: 25px 60px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    border: none;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.button-header:hover {
+    transform: scale(1.03);
+    transition: 200ms;
+}
+
+.icon-social-header {
+    width: 35px;
+    margin-top: 60px;
+    margin-left: 5px;
+    padding: 10px;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    border-radius: 50%;
+    transition: 200ms;
+}
+
+.icon-social-header:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+/* ---------------------- about me -------------------------------- */
+
+.about-me {
+    height: 500px;
+}
+
+.shape-about-me {
+    margin-right: 5vw;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    border-radius: 35px;
+    padding: 30px 50px;
+}
+
+.title-about-me {
+    color: #555555;
+}
+
+.text-about-me {
+    line-height: 2.5;
+    font-size: 18px;
+    color: #9C9C9C;
+}
+
+/* ------------------------- my-specialties ------------------------- */
+
+.my-specialties {
+    height: 700px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.main-title {
+    color: #555555;
+    margin-right: 3vw;
+    margin-bottom: 40px;
+}
+
+.title-shape-specialties {
+    color: #555555;
+}
+
+.up-shape-my-specialties {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.shape-my-specialties {
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    border-radius: 35px;
+    margin: 20px 30px;
+    text-align: left;
+    width: 270px;
+    height: 210px;
+}
+
+.title-shape-specialties {
+    color: #555555;
+    text-align: left;
+    margin: 30px;
+
+}
+
+.sub-title-shape-specialties {
+    color: #9C9C9C;
+    text-align: left;
+    margin: -20px 30px;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.label-progress {
+    text-align: left;
+    position: relative;
+    top: 30px;
+    left: 80%;
+}
+
+.progress-my-specialties {
+    width: 50px;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    background-color: #9C9C9C;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+#progress-figma {
+    background: #555555;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-figma:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress-adobexd {
+    background: #555555;
+    ;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-adobexd:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 60%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress-photoshop {
+    background: #555555;
+    ;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-photoshop:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.down-shape-my-specialties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+#progress-javascript {
+    background: #555555;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-javascript:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 30%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress-css {
+    background: #555555;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-css:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress-html {
+    background: #555555;
+    border-radius: 13px;
+    height: 18px;
+    width: 80%;
+    padding: 3px;
+    direction: ltr;
+    float: left;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#progress-html:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 90%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+
+/* -------------------- work samples ------------------------------------ */
+
+.title-work-sample{
+    margin-right: 6vw;
+}
+
+.work-samples {
+    height: 900px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.shape-work-sample {
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 85vw;
+    height: 50vh;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+
+}
+
+.work-samples-image {
+    width: 40%;
+    height: 83%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #9c9c9c;
+    transition: .16s;
+}
+
+.work-samples-image:hover {
+    transform: scale(1.03);
+    transition: .18s;
+    box-shadow: 0px 11px 14px 3px rgb(0 0 0 / 12%);
+}
+
+.right-shape-work-sample {
+    padding: 4%;
+}
+
+.title-shape-work-sample {
+    font-size: 23px;
+    color: #9C9C9C;
+}
+
+.button-view-work-sample {
+    font-size: 18px;
+    color: #555555;
+    padding: 25px 60px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+    border: none;
+    transition: .15s;
+    cursor: pointer;
+    margin-top: 15vh;
+}
+
+.button-view-work-sample:hover {
+    transform: scale(1.03);
+    transition: .15s;
+}
+
+/* ---------------------------------- footer ------------------- */
+
+.footer {
+    height: 200px;
+    position: relative;
+}
+
+.background-footer {
+    width: 100%;
+    height: 100%;
+    box-shadow: -7px -7px 15px 0 #fff;
+    border-radius: 40px;
+}
+
+.Contact-me-footer {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icon-social-footer {
+    margin-top: 10px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 200ms;
+}
+
+.icon-social-footer:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+    box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+}
+
+.email-for-me-footer {
+    width: 19rem;
+    padding: 12px;
+    border-radius: 13px;
+    border: none;
+    box-shadow: inset 7px 7px 15px 0 rgb(0 0 0 / 12%), inset -7px -7px 15px 0 #fff;
+    background-color: transparent;
+    color: #9c9c9c;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.Created-footer {
+    position: absolute;
+    right: 2%;
+}
+
+.Created-by {
+    color: #9C9C9C;
+}
+
+.my-name {
+    color: #555555;
+}
+
+
+/* ------------------------- responsive tablet ---------------------------------- */
+
+@media screen and (max-width : 1030px) {
+    
+    
+    * {
+        font-family: Sans;
+        direction: rtl;
+        background-color: #F1F1F1;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        height: 860px;
+
+    }
+
+    .top-header {
+        height: 130px;
+    }
+
+    .myNameHeader {
+        font-size: 19px;
+        padding-top: 2%;
+        padding-right: 3%;
+        display: inline-block;
+        color: #555555;
+    }
+
+    .menuHeader {
+        width: 40px;
+        float: left;
+        padding: 10px;
+        margin: 2%;
+    }
+
+    .header-image-shape-wrapper {
+        /* display: table;
+        margin-left: auto;
+        margin-right: auto; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 0px;
+        text-align: center;
+    }
+
+    .shape-image-header {
+        width: 15rem;
+        height: 23rem;
+    }
+
+    .shape-image-header-2 {
+        position: absolute;
+        left: 0%;
+        top: -42%;
+        right: -50%;
+        bottom: 0%;
+        width: 250%;
+        height: 142%;
+    }
+
+    .right-div-header {
+        margin-top: 0%;
+        margin-right: 15%;
+    }
+
+    .text-header {
+        color: #555555;
+        float: right;
+        margin-top: 20px;
+        display: block;
+        font-size: 15px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: stretch;
+    }
+
+    .button-header {
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 15px 30px;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .button-header:hover {
+        transform: scale(1.03);
+        transition: 200ms;
+    }
+
+    .icon-social-header {
+        width: 30px;
+        margin-top: 20px;
+        padding: 6px;
+        box-shadow: 1px 2px 20px 0px rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        background-color: #fff;
+    }
+
+    .icon-social-header:hover {
+        transform: scale(1.05);
+        transition: 200ms;
+    }
+
+    /* ---------------------- about me -------------------------------- */
+
+    .about-me {
+        height: 700px;
+    }
+
+    .shape-about-me {
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        border-radius: 35px;
+        padding: 30px 50px;
+    }
+
+    .title-about-me {
+        color: #555555;
+        font-size: 26px;
+    }
+
+    .text-about-me {
+        line-height: 2;
+        font-size: 15px;
+        color: #9C9C9C;
+    }
+
+    /* ------------------------- my-specialties ------------------------- */
+
+    .my-specialties {
+        height: 1600px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .main-title {
+        text-align: center;
+        color: #555555;
+        margin-right: 3vw;
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+
+    .title-shape-specialties {
+        color: #555555;
+    }
+
+    .up-shape-my-specialties {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+    }
+
+    .shape-my-specialties {
+
+        width: 250px;
+        margin: 10px auto;
+        text-align: left;
+    }
+
+    .title-shape-specialties {
+        color: #555555;
+        text-align: left;
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .sub-title-shape-specialties {
+        color: #9C9C9C;
+        text-align: left;
+        margin: -20px 30px;
+        position: relative;
+        font-size: 15px;
+
+    }
+
+    .label-progress {
+        text-align: left;
+        position: relative;
+        top: 30px;
+        left: 80%;
+    }
+
+    .progress-my-specialties {
+        width: 50px;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        background-color: #9C9C9C;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+
+    #progress-figma {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-figma:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 80%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-adobexd {
+        background: #555555;
+        ;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-adobexd:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 60%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-photoshop {
+        background: #555555;
+        ;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-photoshop:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 50%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    .down-shape-my-specialties {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+    }
+
+    #progress-javascript {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-javascript:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 30%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-css {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-css:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 80%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-html {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-html:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 90%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    /* -------------------- work samples ------------------------------------ */
+
+    .work-samples {
+        height: 950px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .shape-work-sample {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        height: 350px;
+        width: 75vw;
+    }
+
+    .work-samples-image {
+        width: 260px;
+        height: 175px;
+        margin: 0;
+        border-radius: 10px;
+        padding: 3px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .right-shape-work-sample {
+        padding: 0;
+    }
+
+    .title-shape-work-sample {
+        margin: 0;
+        font-size: 20px;
+        color: #9C9C9C;
+    }
+
+    .button-view-work-sample {
+        font-size: 18px;
+        color: #555555;
+        padding: 14px 28px;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        border: none;
+        transition: .15s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .button-view-work-sample:hover {
+        transform: scale(1.03);
+        transition: .15s;
+    }
+
+    /* ---------------------------------- footer ------------------- */
+
+    .footer {
+        height: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-footer {
+        width: 90%;
+        /* height: 100%; */
+
+        box-shadow: none;
+        border-radius: 40px;
+    }
+
+    .Contact-me-footer {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .icon-social-footer {
+        margin-top: 0px;
+        width: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 200ms;
+    }
+
+    .icon-social-footer:hover {
+        transform: scale(1.05);
+        transition: 200ms;
+    }
+
+
+    .Created-footer {
+        position: relative;
+        right: 0%;
+    }
+
+    .Created-by {
+        color: #9C9C9C;
+    }
+
+    .my-name {
+        color: #555555;
+    }
+
+}
+
+
+
+/* ------------------------- responsive phone ---------------------------------- */
+
+@media screen and (max-width : 700px) {
+
+    * {
+        font-family: Sans;
+        direction: rtl;
+        background-color: #F1F1F1;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        height: 860px;
+
+    }
+
+    .top-header {
+        height: 130px;
+    }
+
+    .myNameHeader {
+        font-size: 16px;
+        padding-top: 2%;
+        padding-right: 3%;
+        display: inline-block;
+        color: #555555;
+    }
+
+    .menuHeader {
+        width: 30px;
+        float: left;
+        padding: 10px;
+        margin: 2%;
+    }
+
+    .header-image-shape-wrapper {
+        /* display: table;
+        margin-left: auto;
+        margin-right: auto; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 0px;
+        text-align: center;
+    }
+
+    .shape-image-header {
+        width: 15rem;
+        height: 23rem;
+    }
+
+    .shape-image-header-2 {
+        position: absolute;
+        left: 0%;
+        top: -42%;
+        right: -50%;
+        bottom: 0%;
+        width: 250%;
+        height: 142%;
+    }
+
+    .right-div-header {
+        margin-top: 0%;
+    }
+
+    .text-header {
+        color: #555555;
+        float: right;
+        margin-top: 20px;
+        display: block;
+        font-size: 12px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: stretch;
+    }
+
+    .button-header {
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 15px 30px;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .button-header:hover {
+        transform: scale(1.03);
+        transition: 200ms;
+    }
+
+    .icon-social-header {
+        width: 30px;
+        margin-top: 20px;
+        padding: 6px;
+        box-shadow: 1px 2px 20px 0px rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        background-color: #fff;
+    }
+
+    .icon-social-header:hover {
+        transform: scale(1.05);
+        transition: 200ms;
+    }
+
+    /* ---------------------- about me -------------------------------- */
+
+    .about-me {
+        height: 700px;
+    }
+
+    .shape-about-me {
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        border-radius: 35px;
+        padding: 30px 50px;
+    }
+
+    .title-about-me {
+        color: #555555;
+        font-size: 30px;
+    }
+
+    .text-about-me {
+        line-height: 2;
+        font-size: 18px;
+        color: #9C9C9C;
+    }
+
+    /* ------------------------- my-specialties ------------------------- */
+
+    .my-specialties {
+        height: 1600px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .main-title {
+        text-align: center;
+        color: #555555;
+        margin-right: 3vw;
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+
+    .title-shape-specialties {
+        color: #555555;
+    }
+
+    .up-shape-my-specialties {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+    }
+
+    .shape-my-specialties {
+
+        width: 250px;
+        margin: 10px auto;
+        text-align: left;
+    }
+
+    .title-shape-specialties {
+        color: #555555;
+        text-align: left;
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .sub-title-shape-specialties {
+        color: #9C9C9C;
+        text-align: left;
+        margin: -20px 30px;
+        position: relative;
+        font-size: 15px;
+
+    }
+
+    .label-progress {
+        text-align: left;
+        position: relative;
+        top: 30px;
+        left: 80%;
+    }
+
+    .progress-my-specialties {
+        width: 50px;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        background-color: #9C9C9C;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+
+    #progress-figma {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-figma:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 80%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-adobexd {
+        background: #555555;
+        ;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-adobexd:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 60%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-photoshop {
+        background: #555555;
+        ;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-photoshop:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 50%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    .down-shape-my-specialties {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+    }
+
+    #progress-javascript {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-javascript:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 30%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-css {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-css:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 80%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #progress-html {
+        background: #555555;
+        border-radius: 13px;
+        height: 18px;
+        width: 80%;
+        padding: 3px;
+        direction: ltr;
+        float: left;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+
+    #progress-html:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+        width: 90%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    /* -------------------- work samples ------------------------------------ */
+
+    .work-samples {
+        height: 950px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .main-shape-work-sample {}
+
+    .shape-work-sample {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        height: 350px;
+        width: 75vw;
+    }
+
+    .work-samples-image {
+        width: 260px;
+        height: 175px;
+        margin: 0;
+        border-radius: 10px;
+        padding: 3px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .right-shape-work-sample {
+        padding: 0;
+    }
+
+    .title-shape-work-sample {
+        margin: 0;
+        font-size: 20px;
+        color: #9C9C9C;
+    }
+
+    .button-view-work-sample {
+        font-size: 18px;
+        color: #555555;
+        padding: 14px 28px;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;
+        border: none;
+        transition: .15s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .button-view-work-sample:hover {
+        transform: scale(1.03);
+        transition: .15s;
+    }
+
+    /* ---------------------------------- footer ------------------- */
+
+    .footer {
+        height: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-footer {
+        width: 90%;
+        /* height: 100%; */
+
+        box-shadow: none;
+        border-radius: 40px;
+    }
+
+    .Contact-me-footer {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .icon-social-footer {
+        margin-top: 0px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 200ms;
+    }
+
+    .icon-social-footer:hover {
+        transform: scale(1.05);
+        transition: 200ms;
+    }
+
+
+    .Created-footer {
+        position: relative;
+        right: 0%;
+    }
+
+    .Created-by {
+        color: #9C9C9C;
+    }
+
+    .my-name {
+        color: #555555;
+    }
+
+
+}
