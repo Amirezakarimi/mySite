@@ -17,12 +17,43 @@
         <div class="mainDivHeader">
             <div class="top-header">
                 <h2 class="myNameHeader"> امیررضا کریمی </h2>
-                <img class="menuHeader" src="./Images/menu.svg" alt=" not">
+                <img id="menu-bottom" class="menuHeader" src="./Images/menu.svg" alt=" not">
             </div>
+
+            <!-- --------------------------------------------------------- -->
+
+            <div id="open-menu" class="div-open-menu-style">
+                <img src="Images/close_111152.png" id="closeButton">
+                <a class="item-open-menu" href="#about-me">درباره من</a>
+                <a class="item-open-menu" href="#my-specialties">مهارت ها</a>
+                <a class="item-open-menu" href="#work-samples">نمونه کار ها</a>
+                <a class="item-open-menu" href="#footer">شبکه های اجتماعی</a>
+            </div>
+
+            <script>
+                menuItemsArray = document.querySelectorAll('.item-open-menu')
+                menuCloseButton = document.getElementById('closeButton');
+                Button = document.getElementById('menu-bottom')
+                popUp = document.getElementById('open-menu')
+                Button.addEventListener('click', () => {
+                    popUp.style.display = 'flex'
+                })
+                menuCloseButton.addEventListener('click', () => {
+                    popUp.style.display = 'none'
+                })
+                menuItemsArray.forEach(item => {
+                    item.addEventListener('click', () => {
+                        popUp.style.display = 'none'
+                    })
+                });
+            </script>
+
+            <!-- --------------------------------------------------------- -->
+
             <div class="downHeader">
                 <div class="header-image-shape-wrapper">
                     <div class="shape-image-header">
-                        <div><img class="shape-image-header-2" src="./Images/myphoto.jpg" alt="not">
+                        <div><img class="shape-image-header-2" src="Images/myphoto3.JPG" alt="not">
                         </div>
                     </div>
                 </div>
@@ -45,10 +76,24 @@
                 </div>
             </div>
         </div>
+
+        <script data-cfasync="false" type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+        <script>
+            var $a = $.noConflict(true);
+            $a(window).scroll(function () {
+                if ($a(window).scrollTop() >= 200) {
+                    $a('.top-header').addClass('fixed-header');
+                }
+                else {
+                    $a('.top-header').removeClass('fixed-header');
+                }
+            });
+        </script>
+
     </div>
 
 
-    <div class="about-me">
+    <div id="about-me" class="about-me">
         <div class="shape-about-me" style="width: 60%;height: min-content;">
             <h1 class="title-about-me"> درباره من </h1>
             <p class="text-about-me">
@@ -65,7 +110,7 @@
     </div>
 
 
-    <div class="my-specialties">
+    <div id="my-specialties" class="my-specialties">
         <h1 class="main-title"> تخصص های من </h1>
 
         <div class="up-shape-my-specialties">
@@ -116,51 +161,47 @@
     </div>
 
 
-    <div id="work-samples">
+    <div id="work-samples" class="work-samples">
         <h1 class="main-title title-work-sample"> نمونه کار ها </h1>
 
-        <div class="main-shape-work-sample">
-            <div class="shape-work-sample">
-                <img class="work-samples-image" src="./Images/nemunecar-edu.png" alt="نمونه کار">
-                <div class="right-shape-work-sample">
-                    <span class="title-shape-work-sample"> طراحی سایت آموزشگاهی </span><br>
-                    <a href="https://amirezakarimi.github.io/educational-institutions/"><button
-                            class="button-view-work-sample"> مشاهده </button></a>
-                </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <a class="image-work-sample" href="https://amirezakarimi.github.io/Account/"><img
+                        src="Images/nemunecar-acc.jpg" style="width:100%"></a>
             </div>
 
-            <div class="shape-work-sample">
-                <img class="work-samples-image" src="./Images/nemunecar-acc.png" alt="نمونه کار">
-                <div class="right-shape-work-sample">
-                    <span class="title-shape-work-sample"> طراحی صفحه ورود به حساب  </span><br>
-                    <a href="https://amirezakarimi.github.io/Account/"><button class="button-view-work-sample"> مشاهده
-                        </button></a>
-                </div>
+            <div class="mySlides fade">
+                <a class="image-work-sample" href="https://amirezakarimi.github.io/Architecture/"><img
+                        src="Images/nemunecar-arch.jpg" style="width:100%"></a>
             </div>
 
-            <div class="shape-work-sample">
-                <img class="work-samples-image" src="./Images/nemunecar-arch.png" alt="نمونه کار">
-                <div class="right-shape-work-sample">
-                    <span class="title-shape-work-sample"> سایت فروشگاهی (لوازم دکوراسیون) </span><br>
-                    <a href="https://amirezakarimi.github.io/Architecture/"><button class="button-view-work-sample"> مشاهده
-                        </button></a>
-                </div>
+            <div class="mySlides fade">
+                <a class="image-work-sample" href="https://amirezakarimi.github.io/educational-institutions/"><img
+                        src="Images/nemunecar-edu.jpg" style="width:100%"></a>
             </div>
 
-            
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
     </div>
 
-<!-- <hr> -->
+    <!-- <hr> -->
 
-    <div class="footer">
+    <div id="footer" class="footer">
         <div class="background-footer">
             <div class="Contact-me-footer">
                 <h2> اطلاعات تماس </h2>
                 <a href="https://www.instagram.com/_amirrezakarimii_/"><img class="icon-social-footer"
                         src="./Images/instagram-f-svgrepo-com.svg" alt="instagram"></a>
-                <a href="https://github.com/Amirezakarimi"><img class="icon-social-footer" src="./Images/github-svgrepo-com.svg"
-                        alt="github"></a>
+                <a href="https://github.com/Amirezakarimi"><img class="icon-social-footer"
+                        src="./Images/github-svgrepo-com.svg" alt="github"></a>
                 <a href="https://t.me/Amirezakarimi"><img class="icon-social-footer" src="./Images/telegram-svg.svg"
                         alt="telegram"></a>
             </div>
@@ -176,6 +217,30 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+
 
 </body>
 
